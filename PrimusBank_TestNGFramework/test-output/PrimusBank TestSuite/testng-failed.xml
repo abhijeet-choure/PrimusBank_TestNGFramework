@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [PrimusBank TestSuite]" parallel="classes">
+  <test name="AdminLogin Test(failed)" parallel="classes">
+    <classes>
+      <class name="com.primusbank.tests.CustomerLoginTest">
+        <methods>
+          <include name="launchApp"/>
+        </methods>
+      </class> <!-- com.primusbank.tests.CustomerLoginTest -->
+      <class name="com.primusbank.tests.AdminLoginTest">
+        <methods>
+          <include name="adminLoginTest"/>
+        </methods>
+      </class> <!-- com.primusbank.tests.AdminLoginTest -->
+    </classes>
+  </test> <!-- AdminLogin Test(failed) -->
+  <test name="BankerLoginTest(failed)" parallel="classes">
+    <classes>
+      <class name="com.primusbank.tests.CustomerLoginTest">
+        <methods>
+          <include name="launchApp"/>
+        </methods>
+      </class> <!-- com.primusbank.tests.CustomerLoginTest -->
+      <class name="com.primusbank.tests.BankerLoginTest">
+        <methods>
+          <include name="bankerLoignTest"/>
+        </methods>
+      </class> <!-- com.primusbank.tests.BankerLoginTest -->
+    </classes>
+  </test> <!-- BankerLoginTest(failed) -->
+  <test name="Customer Login Test(failed)" parallel="classes">
+    <classes>
+      <class name="com.primusbank.tests.CustomerLoginTest">
+        <methods>
+          <include name="launchApp"/>
+          <include name="customerLoginTest"/>
+        </methods>
+      </class> <!-- com.primusbank.tests.CustomerLoginTest -->
+    </classes>
+  </test> <!-- Customer Login Test(failed) -->
+</suite> <!-- Failed suite [PrimusBank TestSuite] -->

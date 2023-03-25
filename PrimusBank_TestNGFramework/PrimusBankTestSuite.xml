@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="PrimusBank TestSuite" parallel="tests"> 
+<test name="AdminLogin Test">
+<classes>
+<class name="com.primusbank.tests.AdminLoginTest">
+</class>
+</classes>
+</test>
+<test name="BankerLoginTest">
+<classes>
+<class name="com.primusbank.tests.BankerLoginTest">
+</class>
+</classes>
+</test>
+<test name="Customer Login Test">
+<classes>
+<class name="com.primusbank.tests.CustomerLoginTest">
+</class>
+</classes>
+</test>
+</suite>
